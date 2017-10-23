@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue 循环</title>
+</head>
+<body>
+	<div id="app-4">
+		<ol>
+			<li v-for = "todo in todos">  <!-- 遍历数组 -->
+				{{todo.text}}
+			</li>
+		</ol>
+	</div>
+	<script type="text/javascript" src="https://unpkg.com/vue"></script>
+
+	<script type="text/javascript">
+		var app4 = new Vue({
+			el: "#app-4",  //绑定的DOM元素
+			data: {     //绑定的数据
+				todos: [
+					{ text: 'lichang '},
+					{ text: 'vue'},
+					{ text: 'javascript'}
+				]
+			}
+		})
+	</script>
+</body>
+</html>

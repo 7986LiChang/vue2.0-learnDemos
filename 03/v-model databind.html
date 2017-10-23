@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>vue 双向绑定 v-model</title>
+</head>
+<body>
+	<div id="app-6">
+		<p>
+			{{message}}
+		</p>
+		<input type="text" v-model = "message">  <!-- 通过message属性双向绑定 -->
+	</div>
+	<script type="text/javascript" src="https://unpkg.com/vue"></script>
+
+	<script type="text/javascript">
+		var app6 = new Vue({
+			el: "#app-6",
+			data: {
+				message: 'lichang huang'
+			}
+		})
+	</script>
+</body>
+</html>
